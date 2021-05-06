@@ -10,9 +10,7 @@ export enum FileName {
 }
 
 const entrypointFile = encodeTextFile(`
-(async () => {
-  console.log('hello world');
-})();
+console.log('hello world');
 `);
 
 const metablockFile = encodeTextFile(`
