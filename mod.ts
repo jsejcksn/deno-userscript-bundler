@@ -33,7 +33,9 @@ export async function bundleUserscript (
   );
 
   const stats = await statsIfExists(entrypointPath);
-  if (!(stats.exists && stats.isFile)) exitWithMessage(1, `The entrypoint argument provided is not a file:\n${entrypointPath}`);
+  if (!(stats.exists && stats.isFile)) {
+    throw new Error(`The entrypoint argument provided is not a file:\n${entrypointPath}`);
+  }
 
   let bundleName = '';
 
