@@ -1,4 +1,1 @@
-module.exports = {
-  ...require('./.eslint/eslintrc.cjs'),
-  rules: {'func-style': 'off'},
-};
+module.exports = require('./.eslint/eslintrc.cjs');
