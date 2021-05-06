@@ -1,0 +1,11 @@
+name: Links
+description: Get link URLs
+version: 0.1.0
+match:
+  - https://*/*
+license: MIT
+author: Octocat
+namespace: https://github.com/octocat
+noframes: true
+run-at: document-idle
+grant: GM_registerMenuCommand
