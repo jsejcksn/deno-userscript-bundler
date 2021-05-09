@@ -63,6 +63,20 @@ Use ctrl+c to stop.
 …
 ```
 
+Generate TSConfig for use with VS Code Deno extension
+```sh
+# print to stdout
+uscript-deno tsconfig
+
+# or write to file
+uscript-deno tsconfig -o $TSCONFIG_PATH
+# uscript-deno tsconfig -o path/to/new/tsconfig.json
+```
+```
+Written:
+path/to/new/tsconfig.json
+```
+
 
 ## Notes
 

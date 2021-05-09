@@ -1,5 +1,5 @@
 import {emitOptions} from './options.ts';
-export {baseCompilerOptions} from './options.ts';
+export {baseCompilerOptions, browserCompilerOptions} from './options.ts';
 
 export type BundleOptions = {
 
