@@ -7,5 +7,4 @@ module.exports = {
   parser: tsEslint.parser,
   plugins: tsEslint.plugins,
   root: true,
-  rules: {'func-style': 'off'},
 };
