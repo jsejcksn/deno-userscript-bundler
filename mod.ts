@@ -77,9 +77,9 @@ export async function bundleUserscript (
   const metablock = metablockEntries.toString();
 
   const {bundle} = await bundler.bundleModule(entrypointPath, {
+    bundleType: 'classic',
     header: metablock,
     logDiagnostics: options?.logDiagnostics ?? true,
-    moduleType: 'iife',
   });
 
   await requestPermission(

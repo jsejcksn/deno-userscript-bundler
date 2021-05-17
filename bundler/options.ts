@@ -29,7 +29,7 @@ export const browserCompilerOptions: Deno.CompilerOptions = {
 };
 
 export const emitOptions: Deno.EmitOptions = {
-  bundle: 'esm',
+  bundle: 'module',
   compilerOptions: browserCompilerOptions,
   // sources: {},
 };
