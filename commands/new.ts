@@ -26,7 +26,7 @@ export async function newCmd (args: string[]): Promise<void> {
   }
   catch (ex) {
     if (ex instanceof Error) {
-      // https://deno.land/std@0.97.0/fs/ensure_dir.ts#L14
+      // https://deno.land/std@0.98.0/fs/ensure_dir.ts#L14
       const expectedString = `Ensure path exists, expected 'dir', got '`;
       if (ex.message.startsWith(expectedString)) {
         exitWithMessage(1, `"${dir}" already exists, but is not a directory`);

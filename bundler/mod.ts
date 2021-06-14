@@ -49,7 +49,7 @@ export async function bundleModule (
     }
   }
 
-  // https://deno.land/manual@v1.9.2/typescript/runtime#bundling
+  // https://deno.land/manual@v1.11.0/typescript/runtime#bundling
   let bundle = result.files['deno:///bundle.js'];
 
   if (options?.header) bundle = `${options.header}\n${bundle}`;
