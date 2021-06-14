@@ -25,10 +25,7 @@ async function watchFileForChanges (
 ): Promise<void> {
   const defaultDelay = 800;
   const watcher = Deno.watchFs(filePath, {recursive: false});
-
-  options.signal?.addEventListener('abort', () => {
-    Deno.close((watcher as typeof watcher & {rid: number}).rid);
-  });
+  options.signal?.addEventListener('abort', watcher.close);
 
   let t0 = performance.now();
 
